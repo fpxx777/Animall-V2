@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: #464E2E;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Reggae_One';
+    align-items: center;
+}
+nav h1{
+    color: #F0EBCE;
+    font-size: 9vh;
+    font-weight: 100;
+}
+nav span {
+    color: #AA8B56;
+}
+@font-face {
+    font-family: 'Reggae_One';
+    src: url(Reggae_One/ReggaeOne-Regular.ttf);
+}
