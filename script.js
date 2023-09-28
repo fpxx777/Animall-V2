@@ -22,4 +22,4 @@ menuDesplegables.forEach(function(menuDesplegable) {
     listaCategorias.addEventListener("mouseleave", function() {
         listaCategorias.style.display = "none";
     });
-});
+});                                                 
