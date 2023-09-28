@@ -22,4 +22,11 @@ menuDesplegables.forEach(function(menuDesplegable) {
     listaCategorias.addEventListener("mouseleave", function() {
         listaCategorias.style.display = "none";
     });
-});                                                 
+}); 
+
+function activar(elemento, nuevoColor) {
+    elemento.style.backgroundColor = '#F0EBCE'; 
+}
+function desactivar(elemento) {
+    elemento.style.backgroundColor = '';
+}
