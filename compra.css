@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Reggae_One';
+}
+body {
+    background-color: #978372;
+}
+nav{
+    background-color: #464E2E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav h1{
+    color: #F0EBCE;
+    font-size: 9vh;
+    font-weight: 100;
+}
+nav span {
+    color: #AA8B56;
+}
+@font-face {
+    font-family: 'Reggae_One';
+    src: url(Reggae_One/ReggaeOne-Regular.ttf);
+}
+.nav-superior {
+    color: #F0EBCE;
+    display: flex;
+    justify-content: space-evenly;
+}
+#buscar {
+    border: none;
+    background-color: #F0EBCE;
+    margin-left: -4vw;
+    padding: 0.2vw 15vw 0.2vw 3vw;
+}
+.opciones * {
+    margin-left: 1vw;   
+}
+.opciones img {
+    height: 2vw;
+}
+ul {
+    list-style: none;
+}
+.menus {
+    padding-left: 6.5vw;
+    padding-right: 37vw;
+    background-color: #AA8B56;
+    color: #F0EBCE;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+}
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+}
+
+#lista-categorias {
+    display: none;
+    position: absolute;
+    background-color: #AA8B56;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#lista-categorias li {
+    padding: 1vw;
+}
+
+#lista-categorias li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#boton-menu:hover + #lista-categorias {
+    display: block;
+}
+.lista-categorias {
+    display: none;
+    position: absolute;
+    background-color: #AA8B56;
+    color: #E9E6D6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.lista-categorias li {
+    padding: 1vw;
+}
+.lista-categorias li a {
+    text-decoration: none;
+    color: #E9E6D6;
+}
+.lista-categorias li a:hover {
+    text-decoration: none;
+}
+.boton-menu {
+    background-color: #AA8B56;
+    color: #E9E6D6;
+    border: none;
+    padding-right: 2vw;
+    border-right: 1px solid #E9E6D6;
+    background: linear-gradient(to border-left, #E9E6D6, #AA8B56);
+}
+.boton-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to left, #E9E6D6, #AA8B56);
+}
