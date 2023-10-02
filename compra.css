@@ -116,3 +116,8 @@ ul {
     width: 1px;
     background: linear-gradient(to left, #E9E6D6, #AA8B56);
 }
+
+.resaltado {
+    background-color: #E9E6D6; 
+    color: #AA8B56; 
+}
