@@ -30,3 +30,16 @@ function resaltarElemento(elemento) {
 function restaurarElemento(elemento) {
     elemento.classList.remove("resaltado"); 
 }
+var sum = 0
+function suma() {
+    sum = sum + 1;
+    var num = document.getElementById("numero")
+    num.innerHTML = sum;
+}
+function resta() {
+    if (sum > 0) {
+        sum = sum - 1;
+        var num = document.getElementById("numero")
+        num.innerHTML = sum;
+    }
+}
