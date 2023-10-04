@@ -26,9 +26,9 @@
                 <div class="menu-desplegable">
                     <button class="boton-menu">Categorías</button>
                     <ul class="lista-categorias">
-                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 1</li>
-                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 2</li>
-                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)">Categoria 3</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">Categoria 1</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">Categoria 2</li>
+                        <li onmouseover="resaltarElemento(this)" onmouseout="restaurarElemento(this)" class="categoria">Categoria 3</li>
                     </ul>
                 </div>
                 <div class="menu-desplegable">
@@ -107,48 +107,109 @@
                     <p>aaaaaaaa</p>
                     <p>aaaaaaaa</p>
                     <p>aaaaaaaaa</p>
-                    <h3>Mas info +</h3>
+                    <a href="" class="mas-info"><h3>Mas info +</h3></a>
                 </div>
             </div>
         </div>
         <div class="otro-borde">
             <div class="productos">
-                <div class="menu-productos"><a href=""><img src="productos/Captura de pantalla 2023-10-03 090346.png"
-                            alt="" class="img-producto">
-                        <p>Marca</p>
-                        <h4>Nombre Del Producto</h4>
-                        <div>
-                            <h4>$0.000</h4><img src="" alt="">
-                            <div><img src="" alt=""><img src="" alt=""><button>Agregar al carro</button></div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
                         </div>
-                    </a></div>
-                <div class="menu-productos"><a href=""><img src="productos/Captura de pantalla 2023-10-03 090346.png"
-                            alt="" class="img-producto">
-                        <p>Marca</p>
-                        <h4>Nombre Del Producto</h4>
-                        <div>
-                            <h4>$0.000</h4><img src="" alt="">
-                            <div><img src="" alt=""><img src="" alt=""><button>Agregar al carro</button></div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="" alt="">
+                            </div>
+                            <div class="corazones"><img class="corazon" src="img/Corazon.png" alt="">
+                                <img class="corazon" src="img/Corazon.png" alt="">
+                            </div>
                         </div>
-                    </a></div>
-                <div class="menu-productos"><a href=""><img src="productos/Captura de pantalla 2023-10-03 090346.png"
-                            alt="" class="img-producto">
-                        <p>Marca</p>
-                        <h4>Nombre Del Producto</h4>
-                        <div>
-                            <h4>$0.000</h4><img src="" alt="">
-                            <div><img src="" alt=""><img src="" alt=""><button>Agregar al carro</button></div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito"><h3>Agregar al carro</h3></button>
+                            </div>
                         </div>
-                    </a></div>
-                <div class="menu-productos"><a href=""><img src="productos/Captura de pantalla 2023-10-03 090346.png"
-                            alt="" class="img-producto">
-                        <p>Marca</p>
-                        <h4>Nombre Del Producto</h4>
-                        <div>
-                            <h4>$0.000</h4><img src="" alt="">
-                            <div><img src="" alt=""><img src="" alt=""><button>Agregar al carro</button></div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
                         </div>
-                    </a></div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="" alt="">
+                            </div>
+                            <div class="corazones"><img class="corazon" src="img/Corazon.png" alt="">
+                                <img class="corazon" src="img/Corazon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito"><h3>Agregar al carro</h3></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="" alt="">
+                            </div>
+                            <div class="corazones"><img class="corazon" src="img/Corazon.png" alt="">
+                                <img class="corazon" src="img/Corazon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito"><h3>Agregar al carro</h3></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="menu-productos">
+                    <a href="">
+                        <div class="linea">
+                            <img src="productos/Captura de pantalla 2023-10-03 090346.png" alt="" class="img-producto">
+                        </div>
+                        <div class="borde-2">
+                            <p id="marca">Marca</p>
+                            <h4>Nombre Del Producto</h4>
+                            <div class="precio-oferta">
+                                <h4>$ 0.000</h4><img src="" alt="">
+                            </div>
+                            <div class="corazones"><img class="corazon" src="img/Corazon.png" alt="">
+                                <img class="corazon" src="img/Corazon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="centrar">
+                                <button class="agregar-al-carrito"><h3>Agregar al carro</h3></button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="otro-borde-mas">
+            <img src="productos/Screenshot 2023-10-03 11.36.24 PM.png" alt="" class="panda-rojo" height="350vw">
+            <div class="ofertas">
+                <h1>¿Quieres Recibir Ofertas Especiales?</h1>
+                <p>Recibe ofertas especiales mediante tu email, unete a esta comunidad que adora tanto los animales como tu!</p>
+                <input type="text" placeholder="Email" class="input">
+                <button class="unirse"><h2>¡UNETE!</h2></button>
             </div>
         </div>
     </div>
