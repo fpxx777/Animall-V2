@@ -1,0 +1,45 @@
+* {
+    padding: 0vw;
+    margin: 0vw;
+}
+
+body {
+    background-color: #ACB992;
+}
+
+#parte-arriba {
+    background-color: #464E2E;
+}
+
+#orden-arriba {
+    display: flex;
+    justify-content: space-between;
+}
+
+#o-parte-arriba {
+    background-color: #AA8B56;
+}
+
+#o-orden-arriba {
+    display: flex;
+    justify-content: space-between;
+}
+
+#centro {
+display: flex;
+justify-content: center;
+}
+
+#o-centro {
+    display: inline-block;
+}
+#centro img {
+    width: 8vw;
+    height: 8vh;
+    justify-content: center;
+}
+
+#centro h1 {
+    font-size: ;
+    font-family: ;
+}
