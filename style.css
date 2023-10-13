@@ -1,23 +1,228 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-nav{
-    background-color: #464E2E;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Reggae_One';
-    align-items: center;
-}
-nav h1{
-    color: #F0EBCE;
-    font-size: 9vh;
-    font-weight: 100;
-}
-nav span {
-    color: #AA8B56;
-}
+
 @font-face {
     font-family: 'Reggae_One';
     src: url(Reggae_One/ReggaeOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Kulim_Park';
+    src: url(Kulim_Park/KulimPark-Regular.ttf);
+}
+
+nav {
+    background-color: #464E2E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Reggae_One';
+    align-items: center;
+    padding: 0 2vw;
+}
+
+body {
+    background-color: #D7D3C7;
+}
+
+nav h1 {
+    color: #F0EBCE;
+    font-size: 5vw;
+    font-weight: lighter;
+    margin-right: 2vw;
+}
+
+nav span {
+    color: #AA8B56;
+}
+
+nav input {
+    width: 50vw;
+    height: 2vw;
+    background-color: #E9E5D6;
+    border-radius: 3px;
+    border: 1px solid #E9E5D6;
+    margin-left: 1vw;
+}
+
+nav h3 {
+    color: #E9E5D6;
+    font-size: 1.5vw;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cont-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-clicks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+/*
+barra de navegacion ↑
+*/
+#cont-cat {
+    background-color: #AA8B56;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cat {
+    color: #E9E5D6;
+    font-family: 'Reggae_One';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5vw;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.cont-opc {
+    margin: 0 3vw;
+}
+
+#cat li a {
+    text-decoration: none;
+}
+
+#cat>li>a {
+    color: #E9E5D6;
+}
+
+#opcione {
+    font-size: 1.5vw;
+    color: #E9E5D6;
+    font-family: 'Reggae_One';
+    padding-left: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.opciones {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #AA8B56;
+    margin-left: 0.5vw;
+    min-width: 11vw;
+    max-width: 12.5vw;
+    z-index: 1;
+}
+
+.opciones li a {
+    transition: all;
+    text-decoration: none;
+    padding-left: 0.2vw;
+    color: #E9E5D6;
+}
+
+#cat :hover .opciones {
+    display: block;
+}
+
+#cat :hover .flecha {
+    transition: 1s;
+    transform: rotate(270deg);
+}
+
+.opciones :hover {
+    color: #AA8B56;
+    background-color: #E9E5D6;
+}
+
+.flecha {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.cont-text a {
+    color: #E9E5D6;
+    margin-right: 0.2vw;
+}
+
+.cont-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*
+Categorias ↑
+*/
+#cont-productos {
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    width: 30%;
+    background-color: #E9E5D6;
+    font-family: 'Kulim_Park';
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-img {
+    border-bottom: 1px solid#BEBBAD;
+}
+
+.marca {
+    color: #BEBBAD;
+    font-size: 80%;
+    margin-left: 0.2vw;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30;
+    min-height: 150px;
+    max-height: 350px;
+    margin-left: 0.5vw;
+}
+
+.cont-precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-precio img {
+    width: 20%;
+}
+
+.precio-tachado {
+    color: #BEBBAD;
+    text-decoration: line-through;
+}
+
+.corazao {
+    width: 10%;
 }
