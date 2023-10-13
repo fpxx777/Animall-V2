@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Animall</title>
 </head>
+
 <body>
     <nav>
         <div id="search">
@@ -22,16 +24,96 @@
             </div>
         </div>
     </nav>
-    <div id="cat">
-        <h3>Categorias ⮞</h3>
-        
-        <h3>Farmacia ⮞</h3>
-        <h3>Espacial x ⮞</h3>
-        <h3>Perros ⮞</h3>
-        <h3>Gatos ⮞</h3>
-        <h3>Exoticos ⮞</h3>
-        <h3>Marcas ⮞</h3>
+    <div id="cont-cat">
+        <h3 onclick="ClicleameEsta()" id="opcione">Categorias ⮞</h3>
+        <ul id="cat">
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Farmacia</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+            </li>
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Espacial X</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+            </li>
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Perros</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+            </li>
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Gatos</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+                </a>
+            </li>
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Exoticos</a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+            </li>
+            <li class="cont-opc">
+                <div class="cont-text"><a href="#"> Marcas </a>
+                    <p class="flecha">⮞</p>
+                </div>
+                <ul class="opciones">
+                    <li><a href="#">alguna wea 1</a></li>
+                    <li><a href="#">alguna wea 2</a></li>
+                    <li><a href="#">alguna wea 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <img style="width: 100%; opacity: 90%; z-index: 0;" src="img/Animall.png" alt="">
+    <div id="cont-prudcutos">
+        <div id="1" class="product">
+            <div class="product-img">
+                <img class="imag" src="img/Perro.jpg" alt="">
+            </div>
+            <p class="marca"></p>
+            <div class="product-info">
+                <p class="product-name"></p>
+                <div class="cont-precio">
+                    <p class="precio"></p>
+                    <img src="img/Flecha.png" alt="">
+                </div>
+                <p class="precio-tachado"></p>
+                <img class="corazao" src="img/Corazon-black.png" alt="">
+            </div>
+            <div class="agregar">
+                <p>Agregar al carro</p>
+            </div>
+        </div>
+        <div id="2" class="product">
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>
