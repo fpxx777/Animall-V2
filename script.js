@@ -2,7 +2,7 @@ var click = true;
 var cat = document.getElementById("cat")
 
 
-cat.style.display = "none"
+cat.style.display = "none";
 const productoo = [
     {
         marca: 'Pedigree',
@@ -25,22 +25,43 @@ const productoo = [
         descuento: '50%',
         precioAnterior: '$25.000'
     },
+    {
+        marca: 'Champin Dog',
+        nombre: 'Alimeto de Perro Senior 2,7 kg',
+        precio: '$12.50',
+        descuento: '5%',
+        precioAnterior: '$25.000'
+    }
 ]
-
-
-var img = document.getElementsByClassName("imag");
-var marc = document.getElementsByClassName("marca");
-var productName = document.getElementsByClassName("product-name");
-var precioo = document.getElementsByClassName("precio")
-var precioPasado = document.getElementsByClassName("precio-tachado")
+console.log(productoo[0].marca);
+var a = document.querySelectorAll(".product");
 
 
 for (var i = 0; i < 4; i++) {
-document.getElementById("[i]").innerHTML = `
-<div class="product-img"> <img class="imag" src="img/Perro.jpg" alt=""> </div>`
+a[i].innerHTML = `
+<div class="product-img">
+                <img class="imag" src="img/Perro.jpg" alt="">
+            </div>
+            <p class="marca">` + productoo[i].marca + `</p>
+            <div class="product-info">
+                <p class="product-name">`+ productoo[i].nombre +`</p>
+                <div class="cont-precio">
+                    <p class="precio">`+ productoo[i].precio +`</p>
+                    <img src="img/Flecha.png" alt="">
+                </div>
+                <p class="precio-tachado">`+ productoo[i].precioAnterior + `</p>
+                <img class="corazao" src="img/Corazon-black.png" alt="">
+            </div>
+            <div class="agregar-cont">
+            <button class="agregar">
+                Agregar al carro
+            </button>
+            </div>`
+            console.log("si")
 }
-
-
+function borraEmail(){
+    document.getElementById("email").value = "¡Gracias!"
+}
 
 
 
