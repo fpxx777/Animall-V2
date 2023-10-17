@@ -42,14 +42,14 @@ a[i].innerHTML = `
 <div class="product-img">
                 <img class="imag" src="img/Perro.jpg" alt="">
             </div>
-            <p class="marca">` + productoo[i].marca + `</p>
+            <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
-                <p class="product-name">`+ productoo[i].nombre +`</p>
+                <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
-                    <p class="precio">`+ productoo[i].precio +`</p>
+                    <p class="precio">${productoo[i].precio}</p>
                     <img src="img/Flecha.png" alt="">
                 </div>
-                <p class="precio-tachado">`+ productoo[i].precioAnterior + `</p>
+                <p class="precio-tachado">${productoo[i].precioAnterior}</p>
                 <img class="corazao" src="img/Corazon-black.png" alt="">
             </div>
             <div class="agregar-cont">
@@ -62,12 +62,6 @@ a[i].innerHTML = `
 function borraEmail(){
     document.getElementById("email").value = "¡Gracias!"
 }
-
-
-
-
-
-
 
 
 
