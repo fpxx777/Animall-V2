@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fav.css">
     <title>Animall</title>
 </head>
 
@@ -19,23 +20,18 @@
             <h1>ANI<span>MALL</span></h1>
             <div id="nav-clicks">
                 <div>
-                    <img style="width: 2vw; height: 1.9vw;" src="img/Corazon-black.png" alt="Error">
-                    <div id="numero"></div>
+                <img class="Corazon" id="Corazon" onclick="mostrar();" style="width: 2vw; height: 1.9vw;" src="img/Corazon-black.png" >
                 </div>
                 <img style="width: 2vw; " src="img/Carrito.png" alt="Error">
                 <img style="width: 2vw;" src="img/Perfil.png" alt="Error">
             </div>
         </div>
     </nav>
-    <main>
-        <div id="contenedor" class="contenedor"></div>
-    </main>
-    <div class="informacionCompra" id="informacionCompra">
-        <h2>cesta</h2>
-        <p class="x" id="x">x</p>
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            
+        </div>
     </div>
-    <div class="productosCompra" id="productosCompra"></div>
-    <div class="total" id="total"></div>
     <div id="cont-cat">
         <h3 onclick="ClicleameEsta()" id="opcione">Categorias ⮞</h3>
         <ul id="cat">
@@ -179,5 +175,6 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script src="fav.js"></script>
 
 </html>

@@ -47,10 +47,10 @@ a[i].innerHTML = `
                 <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
                     <p class="precio">${productoo[i].precio}</p>
-                    <img src="img/Flecha.png" alt="">
+                    <img class="imagenes" src="img/Flecha.png" alt="">
                 </div>
                 <p class="precio-tachado">${productoo[i].precioAnterior}</p>
-                <img class="corazao" src="img/Corazon-black.png" alt="">
+                <img class="corazao" onclick="agregarfav(this)" src="img/Corazon-black.png" alt="">
             </div>
             <div class="agregar-cont">
             <button class="agregar">
@@ -83,3 +83,7 @@ function ClicleameEsta() {
         click = false;
     }
 }
+
+
+
+////////////////////////////*///////////////////
