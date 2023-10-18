@@ -2,6 +2,10 @@
     margin: 0%;
     padding: 0%;
     font-family: 'Reggae_One';
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    box-sizing: ;
 }
 body {
     background-color: #978372;
@@ -28,11 +32,16 @@ nav span {
     color: #F0EBCE;
     display: flex;
     justify-content: space-evenly;
+    padding-left: 6vw;
+}
+.nav-superior h1 {
+    font-size: 4.4vw;
 }
 #buscar {
     border: none;
     background-color: #F0EBCE;
-    margin-left: -4vw;
+    width: 30%;
+    border-radius: 3px;
     padding: 0.2vw 15vw 0.2vw 3vw;
 }
 .opciones * {
@@ -53,6 +62,9 @@ ul {
     justify-content: space-between;
     padding-top: 0.6vw;
     padding-bottom: 0.6vw;
+}
+.menus * {
+    font-size: 1vw;
 }
 .menu-desplegable {
     position: relative;
@@ -124,26 +136,29 @@ ul {
     background-color: #E9E6D6; 
     color: #AA8B56; 
 }
-.borde {
-    margin-left: 20%;
-    margin-right: 20%;
-}
+
 .info-producto {
     margin-top: 3vw;
     display: flex;
+    justify-content: center;
 }
-.info-producto * {
-    flex: 1;
+.info-producto img {
+    width: 30%;
+    height: auto;
+    margin-right: 2vw;
 }
+
 .info {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    font-size: 1vw;
 }
+
 .botones {
     display: flex;
     color: #D9B99E;
     align-items: center;
-    justify-content: center;
 }
 .img {
     margin-right: 2vw;
@@ -153,8 +168,16 @@ ul {
 }
 #un-btn {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     border: none;
+    width: 10vw;
     border: 3px solid #D9B99E;
+
+}
+
+#un-btn h2 {
+    margin: 0vh 1vh 0vh 1vh;
 }
 .btn {
     border: none;
@@ -165,9 +188,7 @@ ul {
     background-color: #978372;
     cursor: pointer;
 }
-.btn-suma {
-    margin-left: -5vw;
-}
+
 .añadir-carrito {
     border: none;
     border: 3px solid #D9B99E;
@@ -177,15 +198,16 @@ ul {
     cursor: pointer;
 }
 #numero {
-    padding-right: 2.3vw;
+    display: flex;
 }
 .productos {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.3vw;
 }
 .menu-productos {
-    width: calc(16%);
+    width: calc(20%);
     background-color: #E9E6D6;
     padding-top: 1.5vw;
     margin-top: 3vw;
@@ -197,10 +219,11 @@ ul {
 }
 .otro-borde a {
     text-decoration: none;
+
 }
 .img-producto {
     width: 100%;
-    height: 15vw;
+    height: 18vw;
 }
 .borde-2 {
     padding-left: 1vw;
@@ -212,6 +235,8 @@ ul {
     border-radius: 3px;
     padding: 0.2vw 1vw 0.2vw 1vw;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 5vw;
+    font-size: 1vw;
     margin-bottom: 1vw;
     cursor: pointer;
 }
@@ -272,14 +297,24 @@ ul {
     background-color: #665A48;
     padding-top: 5vw;
     padding-bottom: 5vw;
+    height: 30vw;
+    font-size: 1vw;
+}
+.otro-borde-mas button,. .otro-borde-mas input {
+    font-size: 1vw;
+}
+.otro-borde-mas img {
+    width: 30vw;
+    height: 30vw;
 }
 .ofertas {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex: 1;
-    padding: 1vw 32vw 0vw 3vw;
+    padding: 3vw 0vw 3vw 3vw;
     background-color: #ACB992;
+    width: 100%;
+    padding-right: 30vw;
 }
 .panda-rojo {
     flex: 0.6;
@@ -291,12 +326,16 @@ ul {
     padding: 0.5vw 0vw 0.5vw 0vw;
     border: none;
     cursor: pointer;
+    font-size: 1vw;
 }
 .input {
     background-color: #E9E6D6;
     border: none;
     padding: 0.3vw 0vw 0.3vw 1vw;
     width: 20.3vw;
+}
+.input::placeholder {
+    font-size: 1.5vw;
 }
 .mas-info {
     color: #D9B99E;
