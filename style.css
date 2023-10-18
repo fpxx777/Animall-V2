@@ -1,23 +1,448 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-nav{
-    background-color: #464E2E;
-    display: flex;
-    flex-direction: row;
-    font-family: 'Reggae_One';
-    align-items: center;
-}
-nav h1{
-    color: #F0EBCE;
-    font-size: 9vh;
-    font-weight: 100;
-}
-nav span {
-    color: #AA8B56;
-}
+
 @font-face {
     font-family: 'Reggae_One';
     src: url(Reggae_One/ReggaeOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Kulim_Park';
+    src: url(Kulim_Park/KulimPark-Regular.ttf);
+}
+
+nav {
+    background-color: #464E2E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Reggae_One';
+    align-items: center;
+    padding: 0 2vw;
+}
+
+body {
+    background-color: #D7D3C7;
+    width: 100%;
+}
+
+nav h1 {
+    color: #F0EBCE;
+    font-size: 5vw;
+    font-weight: lighter;
+    margin-right: 2vw;
+}
+
+nav span {
+    color: #AA8B56;
+}
+
+nav input {
+    width: 50vw;
+    height: 2vw;
+    background-color: #E9E5D6;
+    border-radius: 3px;
+    border: 1px solid #E9E5D6;
+    margin-left: 1vw;
+}
+
+nav h3 {
+    color: #E9E5D6;
+    font-size: 1.5vw;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cont-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-clicks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+/*
+barra de navegacion ↑
+*/
+#cont-cat {
+    background-color: #AA8B56;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cat {
+    color: #E9E5D6;
+    font-family: 'Reggae_One';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5vw;
+    list-style: none;
+    transition: all;
+    justify-content: space-evenly;
+    transform: translateX(0%);
+}
+
+.cont-opc {
+    margin: 0 3vw;
+}
+
+#cat li a {
+    text-decoration: none;
+}
+
+#cat>li>a {
+    color: #E9E5D6;
+}
+
+#cat>li {
+    animation: animateIn 300ms ease-out;
+}
+
+#cat:nth-child(1) {
+    animation-delay: 2s;
+}
+
+#cat:nth-child(2) {
+    animation-delay: .9s;
+}
+
+#cat:nth-child(3) {
+    animation-delay: 1.7s;
+}
+
+#cat:nth-child(4) {
+    animation-delay: 2.5s;
+}
+
+#cat:nth-child(5) {
+    animation-delay: 3.3s;
+}
+
+#cat:nth-child(6) {
+    animation-delay: 10s;
+}
+
+@keyframes animateIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6) translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animateOut {
+    100% {
+        opacity: 0;
+        transform: scale(0.6) translateX(-100%);
+    }
+
+    0% {
+        opacity: 1;
+    }
+}
+
+
+
+
+#opcione {
+    font-size: 1.5vw;
+    color: #E9E5D6;
+    font-family: 'Reggae_One';
+    padding-left: 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.opciones {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #AA8B56;
+    margin-left: 0.5vw;
+    min-width: 11vw;
+    max-width: 12.5vw;
+    z-index: 1;
+}
+
+.opciones li a {
+    transition: all;
+    text-decoration: none;
+    padding-left: 0.2vw;
+    color: #E9E5D6;
+}
+
+#cat :hover .opciones {
+    display: block;
+}
+
+#cat :hover .flecha {
+    transition: 1s;
+    transform: rotate(270deg);
+}
+
+.opciones :hover {
+    color: #AA8B56;
+    background-color: #E9E5D6;
+}
+
+.flecha {
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.cont-text a {
+    color: #E9E5D6;
+    margin-right: 0.2vw;
+}
+
+.cont-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*
+Categorias ↑
+*/
+#cont-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: 2vw 0 2vw 2vw;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    width: 30%;
+    background-color: #E9E5D6;
+    font-family: 'Kulim_Park';
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-img {
+    border-bottom: 1px solid#BEBBAD;
+}
+
+.marca {
+    color: #BEBBAD;
+    font-size: 80%;
+    margin-left: 0.2vw;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 30;
+    min-height: 150px;
+    max-height: 350px;
+    margin-left: 0.5vw;
+}
+
+.cont-precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-precio img {
+    width: 20%;
+}
+
+.precio-tachado {
+    color: #BEBBAD;
+    text-decoration: line-through;
+}
+
+.corazao {
+    width: 10%;
+}
+
+.agregar {
+    background-color: #AA8B56;
+    border-style: none;
+    border-radius: 3px;
+    padding: 0.8vw 2vw;
+    color: #E9E5D6;
+}
+
+.agregar-cont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5vw;
+}
+
+/*
+caja de productos
+*/
+footer {}
+
+
+
+
+
+#quiere-ofertas-cont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#quiere-ofertas-cont img {
+    width: 20vw;
+}
+
+#quiere-ofertas {
+    width: 100%;
+    height: 20vw;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #ACB992;
+}
+
+
+#quiere-ofertas input {
+    width: 24vw;
+    color: #665A48;
+    padding-left: 1vw;
+    font-family: 'Kulim_Park';
+    height: 3vw;
+    background-color: #D7D3C7;
+    border-style: none;
+    outline: none;
+    margin-bottom: 1vw;
+}
+
+#quiere-ofertas h1 {
+    margin: 1vw 0 2vw 0;
+    color: #362706;
+    font-family: 'Reggae_One';
+    font-weight: lighter;
+}
+
+#quiere-ofertas p {
+    color: #665A48;
+    margin: 0 0 2vw 0;
+    font-family: 'Kulim_Park';
+}
+
+#quiere-ofertas button {
+    color: #D7D3C7;
+    font-family: 'Reggae_One';
+    font-weight: lighter;
+    background-color: #233714;
+    border-style: none;
+    border-radius: 1px;
+    padding: 1vw 3vw;
+    width: 12vw;
+}
+
+/*
+Ofertas especiales??
+*/
+#parte-abajo-1 {
+    background-color: #665A48;
+}
+
+#parte-abajo-1 h1 {
+    color: #F0EBCE;
+    font-size: 4vw;
+    font-weight: lighter;
+    margin-left: 2vw;
+    font-family: 'Reggae_One';
+}
+
+#parte-abajo-1 span {
+    color: #AA8B56;
+}
+
+#parte-abajo-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    list-style: none;
+    font-family: 'Kulim_Park';
+    background-color: #362706;
+}
+
+.superior {
+    list-style: none;
+    color: #F0EBCE;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.sub-superior {
+    list-style: none;
+    font-size: 1.5vw;
+    font-weight: normal;
+    margin-top: 1vw;
+}
+
+.contenido {
+    list-style: none;
+    font-size: 1vw;
+    font-weight: lighter;
+    margin: 0.2vw 0;
+}
+
+.primer-contenido {
+    list-style: none;
+    font-size: 1vw;
+    font-weight: lighter;
+    margin-top: 0.7Svw;
+}
+
+#parte-abajo-3 {
+    padding: 5vw;
+    background-color: #362706;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#parte-abajo-3 h1 {
+    color: #F0EBCE;
+    font-size: 2vw;
+    font-weight: lighter;
+    font-family: 'Reggae_One';
+}
+
+#parte-abajo-3 span {
+    color: #AA8B56;
+}
+
+#parte-abajo-3 p {
+    font-family: 'Kulim_Park';
+    color: #D7D3C7;
+    font-size: 1vw;
 }
