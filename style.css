@@ -84,30 +84,50 @@ barra de navegacion ↑
     justify-content: space-between;
 }
 
-#cat {
+.cat {
     color: #E9E5D6;
     font-family: 'Reggae_One';
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
     font-size: 1.5vw;
     list-style: none;
     justify-content: space-evenly;
+    transition: 0.5s;
+}
+#active{
+    font-family: 'Reggae_One';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    list-style: none;
+    justify-content: space-evenly;
+    transition: 1s;
+    position: absolute;
+    margin-left: -200%;
+    color: #E9E5D6;
+}
+#active body{
+    transform: translateX(-2000px);
 }
 
 .cont-opc {
     margin: 0 3vw;
 }
 
-#cat li a {
+.cat li a {
     text-decoration: none;
 }
 
-#cat>li>a {
+.cat>li>a {
     color: #E9E5D6;
 }
 
 #opcione {
+    background-color: #AA8B56;
     font-size: 1.5vw;
     color: #E9E5D6;
     font-family: 'Reggae_One';
@@ -115,6 +135,11 @@ barra de navegacion ↑
     cursor: pointer;
     display: flex;
     align-items: center;
+    z-index: 10;
+}
+#flecha-op{
+    margin: 0.5vw 0 0 0.2vw ;
+    transition: 0.5s;
 }
 
 .opciones {
@@ -135,11 +160,11 @@ barra de navegacion ↑
     color: #E9E5D6;
 }
 
-#cat :hover .opciones {
+.cat :hover .opciones {
     display: block;
 }
 
-#cat :hover .flecha {
+.cat :hover .flecha {
     transition: 1s;
     transform: rotate(270deg);
 }
@@ -387,4 +412,130 @@ Ofertas especiales??
     font-family: 'Kulim_Park';
     color: #D7D3C7;
     font-size: 1vw;
+}
+/*
+parte de abajo
+*/
+#cambiar-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E9E5D6;
+    margin: 0 26.6vw 2vw;
+}
+
+.numero-cambio {
+    font-family: 'Kulim_Park';
+    background-color: #D7D3C7;
+    color: #86837b;
+    padding: 1vw 1.3vw;
+    border-radius: 100%;
+    font-size: 1vw;
+    margin: 1vw;
+    text-decoration: none;
+}
+.numero-cambio-exepcion{
+    font-family: 'Kulim_Park';
+    background-color: #AA8B56;
+    padding: 1vw 1.4vw;
+    border-radius: 100%;
+    font-size: 1vw;
+    margin: 1vw;
+    text-decoration: none;
+}
+.seleccion-exepcion{
+    font-family: 'Kulim_Park';
+    background-color: #AA8B56;
+    color: #E9E5D6;
+    padding: 1vw 1.4vw;
+    border-radius: 100%;
+    font-size: 1vw;
+    margin: 1vw;
+    text-decoration: none;
+}
+/*
+cambiar pagina
+*/
+#carrito-cont{
+    position: fixed;
+    z-index: 11;
+    left: 61.1%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ACB992;
+    display: flex;
+}
+
+#carr{
+    background-color: #362706;
+    bottom: 0;
+}
+#carr p{
+    background-color: #DF2E38;
+    font-family: 'Kulim_Park';
+    color: #F0EBCE;
+    padding: 1.5vw 2vw;
+}
+#productos-g{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 0 0 1vw;
+    width: 33%;
+}
+#tusp{
+    margin-bottom: 3vw;
+    font-family: 'Kulim_Park';
+    color: #233714;
+}
+.img-carr{
+    width: 10vw;
+}
+.carrito-product{
+    display: flex;
+    flex-direction: row;
+}
+.carrito-product p{
+    
+}
+.cont-carrito-product{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1vw 0;
+    background-color: #E9E5D6;
+    max-width: 100%;
+}
+.info-carrito{
+    margin-left: 1vw;
+    font-family: 'Kulim_Park';
+}
+.cantidad-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ACB992;
+    padding-right: 0.5vw;
+}
+.cantidad-cont p{
+    color: #F0EBCE;
+    background-color: #362706;
+    padding: 0 0.5vw;
+}
+.cantidad-cont button{
+    border-style: none;
+    background-color: #233714;
+    width: 1.3vw;
+    height: 1.5vw;
+    font-family: 'Kulim_Park';
+    color: #ACB992;
+    cursor: pointer;
+
+}
+.pe{
+    margin-top: 1.5vw;
+}
+#nada{
+    font-family: 'Kulim_Park';
+    color: #D7D3C7;
+    text-align: center;
 }
