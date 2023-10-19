@@ -1,36 +1,33 @@
-function mostrarElemtrosLista(){
+function mostrarElemtrosLista() {
     productosCompra.innerHTML = ""
     valortotal = 0
-    for (let i=0 ; i < lista.length; i++){
+    for (let i = 0; i < lista.length; i++) {
     }
 }
 var isClick = false;
 var compraCont = document.getElementById("contenedorCompra");
-function mostrar(){
-    if(isClick == false){
-        compraCont.style.display ='block';
+function mostrar() {
+    if (isClick == false) {
+        compraCont.style.display = 'block';
         isClick = true;
     }
-    else if(isClick == true){
-        compraCont.style.display ='none';
+    else if (isClick == true) {
+        compraCont.style.display = 'none';
         isClick = false;
     }
 }
-var b = document.querySelectorAll(".informacionCompra");
-
-function agregarfav(element){
-    var padre = element.parentElement;
-    var primero = padre.querySelector(".imag").src;
-    var segunda = padre.querySelector(".marca").innerHTML;
-    var tercera = padre.querySelector(".product-name").innerHTML;
-    var cuarto = padre.querySelector(".precio").innerHTML
-    var quinto = padre.querySelector(".imagenes").src;
-    var sexto = padre.querySelector(".precio-tachado").innerHTML;
-    var septimo = padre.querySelector(".corazao").src;
-    var octavo = padre.querySelector("agregar").innerHTML
-
-    var informacionCompra = document.querySelector(".informacionCompra");
-    informacionCompra.innerHTML +=`
+var b = document.getElementsByClassName(".informacionCompra");
+var primero = document.querySelector(".imag").src;
+var segunda = document.querySelector(".marca").innerText;
+var tercera = document.querySelector(".product-name").innerText;
+var cuarto = document.querySelector(".precio").innerText;
+var quinto = document.querySelector(".imagenes").src;
+var sexto = document.querySelector(".precio-tachado").innerText;
+var septimo = document.querySelector(".corazao").src;
+var octavo = document.querySelector("agregar").innerText;
+function agregarfav(element) {
+    b = element.parentElement;
+    b.innerHTML += `
     <div class="product-imgfav">
     <img class="imag-fav" src="${primero}" alt="">
 </div>
@@ -44,7 +41,7 @@ function agregarfav(element){
     <p class="fav-tachado">${sexto}</p>
     <img class="corazon" onclick="quitarfav(this)" src="${septimo}">
 </div>
-<div class="agregar-f4v">
+<div class="añadir-f4v">
 <button class="fav">${octavo}</button>
 </div>
     `

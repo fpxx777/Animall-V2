@@ -40,7 +40,7 @@ var a = document.querySelectorAll(".product");
 for (var i = 0; i < 4; i++) {
 a[i].innerHTML = `
 <div class="product-img">
-                <img class="imag" src="img/Perro.jpg" alt="">
+                <img class="imag" id="imag" src="img/Perro.jpg" alt="">
             </div>
             <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
