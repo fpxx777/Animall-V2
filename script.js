@@ -6,33 +6,124 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        marca: 'Pedigree',
-        nombre: 'Alimento Perro Adulto Pedigree Carne Pollo y Cereal 3 kg',
-        precio: '$10.990',
-        descuento: '50%',
-        precioAnterior: '%20.990'
+        img: 'img-productos/1.jpg',
+        marca: 'Cannes',
+        nombre: 'Alimentos para perros Cannes adulto 9kg',
+        precio: '10.990',
+        precioAnterior: '20.990'
     },
     {
-        marca: 'Champion Dog',
-        nombre: 'Alimento Seco Para Perro Adulto 15 kg Carne y Cereal',
-        precio: '$15.990',
-        descuento: '25%',
-        precioAnterior: '$20.990'
+        img: 'img-productos/2.png',
+        marca: 'Kulcan',
+        nombre: 'Juguete_para_Perro_Pelota_Interactiva_7_Cm_Kulcan',
+        precio: '5.990',
+        precioAnterior: '12.990'
     },
     {
-        marca: 'Champion Dog',
-        nombre: 'Alimento de Perro Senior 2,7 kg',
-        precio: '$12.500',
-        descuento: '50%',
-        precioAnterior: '$25.000'
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
     },
     {
-        marca: 'Champin Dog',
-        nombre: 'Alimeto de Perro Senior 2,7 kg',
-        precio: '$12.50',
-        descuento: '5%',
-        precioAnterior: '$25.000'
-    }
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/.jpg',
+        marca: '',
+        nombre: '',
+        precio: '',
+        precioAnterior: ''
+    },
 ]
 console.log(productoo[0].marca);
 var a = document.querySelectorAll(".product");
@@ -41,27 +132,17 @@ var a = document.querySelectorAll(".product");
 for (var i = 0; i < 4; i++) {
     a[i].innerHTML = `
 <div class="product-img">
-                <img class="imag" src="img/Perro.jpg" alt="">
+                <img class="imag" src="${productoo[i].img}" alt="">
             </div>
             <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
-<<<<<<< HEAD
-                <p class="product-name">`+ productoo[i].nombre + `</p>
-                <div class="cont-precio">
-                    <p class="precio">`+ productoo[i].precio + `</p>
-                    <img src="img/Flecha.png" alt="">
-                </div>
-                <p class="precio-tachado">`+ productoo[i].precioAnterior + `</p>
-                <img onclick="fav(this)" class="corazao" src="img/Corazon-black.png" alt="">
-=======
                 <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
-                    <p class="precio">${productoo[i].precio}</p>
+                    <p class="precio">$${productoo[i].precio}</p>
                     <img src="img/Flecha.png" alt="">
                 </div>
-                <p class="precio-tachado">${productoo[i].precioAnterior}</p>
-                <img class="corazao" src="img/Corazon-black.png" alt="">
->>>>>>> 3d311d2f06ebb5ae8331705dab0a39a217f8bff5
+                <p class="precio-tachado">$${productoo[i].precioAnterior}</p>
+                <img onclick="fav(this)" class="corazao" src="img/Corazon-black.png" alt="">
             </div>
             <div class="agregar-cont">
             <button style="cursor: pointer;" onclick="agregarCarro(this)" class="agregar">
@@ -73,7 +154,6 @@ for (var i = 0; i < 4; i++) {
 function borraEmail() {
     document.getElementById("email").value = "¡Gracias!"
 }
-<<<<<<< HEAD
 var isClick = false;
 function fav(element) {
     if (isClick == false) {
@@ -100,18 +180,6 @@ function cantidadMenos(element) {
         element.parentNode.querySelector('p').innerHTML = num;
     }
 }
-=======
-
-
-
-
-
-
-
-
-
-
->>>>>>> 3d311d2f06ebb5ae8331705dab0a39a217f8bff5
 
 function ClicleameEsta() {
     if (click == false) {
