@@ -437,7 +437,7 @@ parte de abajo
 }
 .numero-cambio-exepcion{
     font-family: 'Kulim_Park';
-    background-color: #AA8B56;
+    background-color: #D7D3C7;
     padding: 1vw 1.4vw;
     border-radius: 100%;
     font-size: 1vw;
@@ -449,6 +449,16 @@ parte de abajo
     background-color: #AA8B56;
     color: #E9E5D6;
     padding: 1vw 1.4vw;
+    border-radius: 100%;
+    font-size: 1vw;
+    margin: 1vw;
+    text-decoration: none;
+}
+.seleccion{
+    font-family: 'Kulim_Park';
+    background-color: #AA8B56;
+    color: #E9E5D6;
+    padding: 1vw 1.3vw;
     border-radius: 100%;
     font-size: 1vw;
     margin: 1vw;
@@ -540,11 +550,3 @@ cambiar pagina
     color: #D7D3C7;
     text-align: center;
 }
-{
-    img: 'img-productos/3.png',
-    marca: 'Mascan',
-    nombre: 'Animal_Látex_Con_Cuerda_Perro_Mascan',
-    precio: '6.990',
-    precioAnterior: '15.990'
-},
-Menu_cerdo_para_perros–400gr
