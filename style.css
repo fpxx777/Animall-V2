@@ -93,7 +93,9 @@ barra de navegacion ↑
     text-decoration: none;
     font-size: 1.5vw;
     list-style: none;
+    transition: all;
     justify-content: space-evenly;
+<<<<<<< HEAD
     transition: 0.5s;
 }
 #active{
@@ -112,6 +114,9 @@ barra de navegacion ↑
 }
 #active body{
     transform: translateX(-2000px);
+=======
+    transform: translateX(0%);
+>>>>>>> 3d311d2f06ebb5ae8331705dab0a39a217f8bff5
 }
 
 .cont-opc {
@@ -125,6 +130,58 @@ barra de navegacion ↑
 .cat>li>a {
     color: #E9E5D6;
 }
+
+#cat>li {
+    animation: animateIn 300ms ease-out;
+}
+
+#cat:nth-child(1) {
+    animation-delay: 2s;
+}
+
+#cat:nth-child(2) {
+    animation-delay: .9s;
+}
+
+#cat:nth-child(3) {
+    animation-delay: 1.7s;
+}
+
+#cat:nth-child(4) {
+    animation-delay: 2.5s;
+}
+
+#cat:nth-child(5) {
+    animation-delay: 3.3s;
+}
+
+#cat:nth-child(6) {
+    animation-delay: 10s;
+}
+
+@keyframes animateIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6) translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animateOut {
+    100% {
+        opacity: 0;
+        transform: scale(0.6) translateX(-100%);
+    }
+
+    0% {
+        opacity: 1;
+    }
+}
+
+
+
 
 #opcione {
     background-color: #AA8B56;
@@ -384,12 +441,14 @@ Ofertas especiales??
     font-weight: lighter;
     margin: 0.2vw 0;
 }
-.primer-contenido{
+
+.primer-contenido {
     list-style: none;
     font-size: 1vw;
     font-weight: lighter;
     margin-top: 0.7Svw;
 }
+
 #parte-abajo-3 {
     padding: 5vw;
     background-color: #362706;
@@ -398,6 +457,7 @@ Ofertas especiales??
     justify-content: space-evenly;
     align-items: center;
 }
+
 #parte-abajo-3 h1 {
     color: #F0EBCE;
     font-size: 2vw;
@@ -408,7 +468,8 @@ Ofertas especiales??
 #parte-abajo-3 span {
     color: #AA8B56;
 }
-#parte-abajo-3 p{
+
+#parte-abajo-3 p {
     font-family: 'Kulim_Park';
     color: #D7D3C7;
     font-size: 1vw;

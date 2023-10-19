@@ -43,8 +43,9 @@ for (var i = 0; i < 4; i++) {
 <div class="product-img">
                 <img class="imag" src="img/Perro.jpg" alt="">
             </div>
-            <p class="marca">` + productoo[i].marca + `</p>
+            <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
+<<<<<<< HEAD
                 <p class="product-name">`+ productoo[i].nombre + `</p>
                 <div class="cont-precio">
                     <p class="precio">`+ productoo[i].precio + `</p>
@@ -52,6 +53,15 @@ for (var i = 0; i < 4; i++) {
                 </div>
                 <p class="precio-tachado">`+ productoo[i].precioAnterior + `</p>
                 <img onclick="fav(this)" class="corazao" src="img/Corazon-black.png" alt="">
+=======
+                <p class="product-name">${productoo[i].nombre}</p>
+                <div class="cont-precio">
+                    <p class="precio">${productoo[i].precio}</p>
+                    <img src="img/Flecha.png" alt="">
+                </div>
+                <p class="precio-tachado">${productoo[i].precioAnterior}</p>
+                <img class="corazao" src="img/Corazon-black.png" alt="">
+>>>>>>> 3d311d2f06ebb5ae8331705dab0a39a217f8bff5
             </div>
             <div class="agregar-cont">
             <button style="cursor: pointer;" onclick="agregarCarro(this)" class="agregar">
@@ -63,6 +73,7 @@ for (var i = 0; i < 4; i++) {
 function borraEmail() {
     document.getElementById("email").value = "¡Gracias!"
 }
+<<<<<<< HEAD
 var isClick = false;
 function fav(element) {
     if (isClick == false) {
@@ -89,6 +100,18 @@ function cantidadMenos(element) {
         element.parentNode.querySelector('p').innerHTML = num;
     }
 }
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3d311d2f06ebb5ae8331705dab0a39a217f8bff5
 
 function ClicleameEsta() {
     if (click == false) {
