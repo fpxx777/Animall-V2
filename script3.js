@@ -6,102 +6,46 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        img: '',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: '',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/7.jpg',
-        marca: 'Cannes',
-        nombre: 'Alimentos para perros Cannes adulto 9kg',
-        precio: '10.990',
-        precioAnterior: '20.990'
-    },
-    {
-        img: 'img-productos/8.jpg',
-        marca: 'img-productos/2.png',
-        nombre: 'Juguete_para_Perro_Pelota_Interactiva_7_Cm_Kulcan',
-        precio: '5.990',
-        precioAnterior: '12.990'
-    },
-    {
-        img: 'img-productos/9.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft_Snack_Treaties_Minis_Salmon',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/10.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft_Beed_Stick_Jr_Mineral',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/11.png',
-        marca: 'Virbac',
-        nombre: 'VIRBAC_MILPRO_PERROS-5 KG',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/12.png',
-        marca: 'Virbac',
-        nombre: 'Virbac_HPM_Canino_Junior_Special_Medium_12_kg',
+        img: 'img-productos/28.png',
+        marca: 'Cappas',
+        nombre: 'CAPA_NEGRA_IMPERMEABLE',
         precio: '2.990',
         precioAnterior: '5.990'
     },
     {
-        img: 'img-productos/13.png',
-        marca: 'Virbac',
-        nombre: 'Virbac_HPM_Canino_Junior_Special_Large_12 kg',
-        precio: '4.990',
-        precioAnterior: '7.990'
+        img: 'img-productos/29.png',
+        marca: 'Cepillata',
+        nombre: 'Cepillo_Desplazador_Grande_Para_Mascotas',
+        precio: '5.990',
+        precioAnterior: '8.990'
     },
     {
-        img: 'img-productos/14.png',
-        marca: 'Virbac',
-        nombre: 'Virbac_HPM_Canino_Baby_Large-Medium_12kg',
-        precio: '8.990',
-        precioAnterior: '15.990'
+        img: 'img-productos/30.png',
+        marca: 'Cepillate',
+        nombre: 'Cepillo_Desplazador',
+        precio: '2.990',
+        precioAnterior: '3.990'
+    },
+    {
+        img: 'img-productos/31.png',
+        marca: 'Collaraca',
+        nombre: 'Collar_para_perro_de_cuero_con_placa',
+        precio: '3.990',
+        precioAnterior: '5.990'
+    },
+    {
+        img: 'img-productos/32.jpg',
+        marca: 'Collaraca',
+        nombre: 'Collares_De_Perro',
+        precio: '2.990',
+        precioAnterior: '8.990'
+    },
+    {
+        img: 'img-productos/33.png',
+        marca: 'Correlata',
+        nombre: 'Correa_entrenamiento_perros_de_10_metros',
+        precio: '1.990',
+        precioAnterior: '2.990'
     },
 ]
 console.log(productoo[0].marca);

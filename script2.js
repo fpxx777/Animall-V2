@@ -6,90 +6,6 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        img: '',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: '',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/.jpg',
-        marca: '',
-        nombre: '',
-        precio: '',
-        precioAnterior: ''
-    },
-    {
-        img: 'img-productos/7.jpg',
-        marca: 'Cannes',
-        nombre: 'Alimentos para perros Cannes adulto 9kg',
-        precio: '10.990',
-        precioAnterior: '20.990'
-    },
-    {
-        img: 'img-productos/8.jpg',
-        marca: 'img-productos/2.png',
-        nombre: 'Juguete_para_Perro_Pelota_Interactiva_7_Cm_Kulcan',
-        precio: '5.990',
-        precioAnterior: '12.990'
-    },
-    {
-        img: 'img-productos/9.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft_Snack_Treaties_Minis_Salmon',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/10.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft_Beed_Stick_Jr_Mineral',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/11.png',
-        marca: 'Virbac',
-        nombre: 'VIRBAC_MILPRO_PERROS-5 KG',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/12.png',
-        marca: 'Virbac',
-        nombre: 'Virbac_HPM_Canino_Junior_Special_Medium_12_kg',
-        precio: '2.990',
-        precioAnterior: '5.990'
-    },
-    {
         img: 'img-productos/13.png',
         marca: 'Virbac',
         nombre: 'Virbac_HPM_Canino_Junior_Special_Large_12 kg',
@@ -102,6 +18,97 @@ const productoo = [
         nombre: 'Virbac_HPM_Canino_Baby_Large-Medium_12kg',
         precio: '8.990',
         precioAnterior: '15.990'
+    },
+    {
+        img: 'img-productos/15.png',
+        marca: 'Charly',
+        nombre: 'ALIMENTO_PARA_PERRO_SABOR_CARNE_Y_CEREALES_CHARLY_3 KG',
+        precio: '12.990',
+        precioAnterior: '20.990'
+    },
+    {
+        img: 'img-productos/16.jpg',
+        marca: 'Cachupin',
+        nombre: 'Alimento_para_Perros_18Kg',
+        precio: '13.990',
+        precioAnterior: '15.990'
+    },
+    {
+        img: 'img-productos/17.jpg',
+        marca: 'Champion Dog',
+        nombre: 'Alimento_Perro_Adulto_Carne_3_kg',
+        precio: '20.990',
+        precioAnterior: '25.990'
+    },
+    {
+        img: 'img-productos/18.jpeg',
+        marca: 'Champion Dog',
+        nombre: 'Alimento_seco_para_perro_adulto_15_kg_carne_y_rroz',
+        precio: '12.990',
+        precioAnterior: '26.990'
+    },
+    {
+        img: 'img-productos/19.jpg',
+        marca: 'Cachupin',
+        nombre: 'Alimento-perro-cachorro-carne-pollo-y-leche-3-kg',
+        precio: '12.990',
+        precioAnterior: '15.990'
+    },
+    {
+        img: 'img-productos/20.jpeg',
+        marca: 'Champion Dog',
+        nombre: 'Alimento-seco-para-cachorro-3-kg-carne-y-pollo.',
+        precio: '10.990',
+        precioAnterior: '16.990'
+    },
+    {
+        img: 'img-productos/21.jpg',
+        marca: 'Champion Dog',
+        nombre: 'Alimento-Seco-Para-Perros-Cachorros-3-kg',
+        precio: '',
+        precioAnterior: ''
+    },
+    {
+        img: 'img-productos/22.png',
+        marca: 'Puppy',
+        nombre: 'Amity_Chicken_Puppy_SP_Low_Grain_4kg',
+        precio: '20.990',
+        precioAnterior: '28.990'
+    },
+    {
+        img: 'img-productos/23.jpg',
+        marca: 'Atacama',
+        nombre: 'Atacama_Premium_Adulto_para_todas_las_Razas',
+        precio: '22.990',
+        precioAnterior: '28.990'
+    },
+    {
+        img: 'img-productos/24.png',
+        marca: 'Beeps',
+        nombre: 'BEEPS_SHAMPOO_2_EN_1.',
+        precio: '4.990',
+        precioAnterior: '8.990'
+    },
+    {
+        img: 'img-productos/25.png',
+        marca: 'Beeps',
+        nombre: 'BEEPS-SHAMPOO_CON_ALOE_VERA_502_ML',
+        precio: '4.990',
+        precioAnterior: '8.990'
+    },
+    {
+        img: 'img-productos/26.png',
+        marca: 'Belcano',
+        nombre: 'Belcando_Junior_Grain_Free_Poultry_12.5Kg',
+        precio: '17.990',
+        precioAnterior: '20.990'
+    },
+    {
+        img: 'img-productos/27.png',
+        marca: 'Doockson',
+        nombre: 'CALZÓN_PROTECTOR',
+        precio: '5.990',
+        precioAnterior: '8.990'
     },
 ]
 console.log(productoo[0].marca);
