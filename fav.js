@@ -16,17 +16,19 @@ function mostrar() {
         isClick = false;
     }
 }
+
 var b = document.getElementsByClassName(".informacionCompra");
-var primero = document.querySelector(".imag").src;
-var segunda = document.querySelector(".marca").innerText;
-var tercera = document.querySelector(".product-name").innerText;
-var cuarto = document.querySelector(".precio").innerText;
-var quinto = document.querySelector(".imagenes").src;
-var sexto = document.querySelector(".precio-tachado").innerText;
-var septimo = document.querySelector(".corazao").src;
-var octavo = document.querySelector("agregar").innerText;
+
 function agregarfav(element) {
     b = element.parentElement;
+    var primero = b.querySelector(".imag").src;
+    var segunda = b.querySelector(".marca").innerText;
+    var tercera = b.querySelector(".product-name").innerText;
+    var cuarto = b.querySelector(".precio").innerText;
+    var quinto = b.querySelector(".imagenes").src;
+    var sexto = b.querySelector(".precio-tachado").innerText;
+    var septimo = b.querySelector(".corazao").src;
+    var octavo = b.querySelector(".agregar").innerText;
     b.innerHTML += `
     <div class="product-imgfav">
     <img class="imag-fav" src="${primero}" alt="">
