@@ -219,6 +219,12 @@ nav bar
 
 .proyect h3 {
     margin-top: 2vw;
+    text-align: center;
+}
+.proyect img {
+    width: 100%;
+    height: 20vw;
+    border:#3C415C 2px solid;
 }
 
 /*
