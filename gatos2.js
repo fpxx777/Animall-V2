@@ -6,119 +6,124 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        img: 'productos/Saco-Nomade_Pellets_10kg_1_720x.webp',
-        marca: 'Nomade',
-        nombre: 'Alimento Gato Adulto 10kg',
-        precio: '23.990',
-        precioAnterior: '30.000',
-        link: 'producto1.html'
+        img: 'Gatos/16.png',
+        marca: 'betty',
+        nombre: 'Caja_Catit_Vesper_Grande_Nogal',
+        precio: '16.270',
+        precioAnterior: '17.260'
     },
     {
-        img: 'productos/lw_alimento_extruido_hamster_1_1_1.jpg',
-        marca: 'Hunter',
-        nombre: 'Alimento extruido para hamster y gerbos',
+        img: 'Gatos/17.png',
+        marca: 'sussy',
+        nombre: 'ARENA_SANITARIA_MULTICAT',
+        precio: '17.270',
+        precioAnterior: '18.260'
+    },
+    {
+        img: 'Gatos/18.png',
+        marca: 'Windows',
+        nombre: 'PALA_DE_ARENA_PARA_FECAS',
+        precio: '3.270',
+        precioAnterior: '8.260'
+    },
+    {
+        img: 'Gatos/19.png',
+        marca: 'Fazbear',
+        nombre: 'BAÑO_GATO_ABIERTO-LIMPIA_PATITAS',
+        precio: '19.990',
+        precioAnterior: '22.960'
+    },
+    {
+        img: 'Gatos/20.png',
+        marca: 'Splash',
+        nombre: 'CLUB_P&G_BAÑO_IGLU_VERDE_CON_FILTRO_Y_PALA',
+        precio: '22.270',
+        precioAnterior: '24.260'
+    },
+    {
+        img: 'Gatos/21.png',
+        marca: 'virbac',
+        nombre: 'VIRBAC_MILPRO_GATOS-2 KG',
         precio: '14.990',
-        precioAnterior: '19.990',
-        link: 'producto2.html'
+        precioAnterior: '18.000'
     },
     {
-        img: 'productos/golden-fishless-filet-94288_2000x.webp',
-        marca: 'Protteina Foods',
-        nombre: 'GARDEIN GOLDEN FISHLESS FILETS',
-        precio: '7.990',
-        precioAnterior: '10.990',
-        link: 'producto3.html'
+        img: 'Gatos/22.png',
+        marca: 'clumping',
+        nombre: 'ARENA_SANITARIA_CLUMPING_FORMULA',
+        precio: '22.270',
+        precioAnterior: '23.990'
     },
     {
-        img: 'img-productos/30.png',
-        marca: 'Cepillate',
-        nombre: 'Cepillo Desplazador',
-        precio: '2.990',
-        precioAnterior: '3.990'
+        img: 'Gatos/23.png',
+        marca: 'petdroid',
+        nombre: 'Gigwi_Feather_Hider',
+        precio: '9.660',
+        precioAnterior: '10.990'
     },
     {
-        img: 'img-productos/31.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collar para perro de cuero con placa',
+        img: 'Gatos/24.png',
+        marca: 'ferplast',
+        nombre: 'CEPILLO_PARA_GATOS_FERPLAST',
         precio: '3.990',
-        precioAnterior: '5.990'
+        precioAnterior: '5.000'
     },
     {
-        img: 'img-productos/32.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collares De Perro',
+        img: 'Gatos/25.png',
+        marca: 'Catit',
+        nombre: 'Catit_Vesper_Cubo',
+        precio: '15.670',
+        precioAnterior: '17.260'
+    },
+    {
+        img: 'Gatos/26.png',
+        marca: 'atigrado',
+        nombre: 'CATIT_BAÑO_JUMBO_ATIGRADO',
+        precio: '25.000',
+        precioAnterior: '27.690'
+    },
+    {
+        img: 'Gatos/27.png',
+        marca: 'Bolas',
+        nombre: 'Bola_de_Mimbre_con_Plumas_y_Cascabel',
         precio: '2.990',
-        precioAnterior: '8.990'
+        precioAnterior: '4.000'
     },
     {
-        img: 'img-productos/7.jpg',
-        marca: 'Cannes',
-        nombre: 'Alimentos para perros Cannes adulto 9kg',
-        precio: '10.990',
-        precioAnterior: '20.990'
+        img: 'Gatos/28.png',
+        marca: 'Juguetones',
+        nombre: 'Juguete_Pescado_Para_Gato_Con_Movimiento_Interactivo_Con_Usb',
+        precio: '7.370',
+        precioAnterior: '8.660'
     },
     {
-        img: 'img-productos/8.png',
-        marca: 'img-productos/2.png',
-        nombre: 'Juguete para Perro Pelota Interactiva 7 Cm Kulcan',
-        precio: '5.990',
-        precioAnterior: '12.990'
+        img: 'Gatos/29.png',
+        marca: 'Bolsos',
+        nombre: 'Bolso_Tipo_Canguro_Para_Mascotas',
+        precio: '5.270',
+        precioAnterior: '8.270'
     },
     {
-        img: 'img-productos/9.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Snack Treaties Minis Salmon',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/10.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Beed Stick Jr Mineral',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/11.png',
-        marca: 'Virbac',
-        nombre: 'VIRBAC MILPRO PERROS-5 KG',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/12.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Medium 12 kg',
-        precio: '2.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/13.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Large 12 kg',
-        precio: '4.990',
-        precioAnterior: '7.990'
-    },
-    {
-        img: 'img-productos/14.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Baby Large-Medium 12kg',
-        precio: '8.990',
-        precioAnterior: '15.990'
-    },
+        img: 'Gatos/30.png',
+        marca: 'casitas',
+        nombre: 'Casa_Iglu_Cueva_Para_Mascotas',
+        precio: '23.270',
+        precioAnterior: '25.260'
+    }
+    
 ]
 console.log(productoo[0].marca);
 var a = document.querySelectorAll(".product");
 
 
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 15; i++) {
     a[i].innerHTML = `
-<a href="${productoo[i].link}" class="product-img">
+<div class="product-img">
                 <img class="imag" src="${productoo[i].img}" alt="">
-            </a>
+            </div>
             <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
-                <a href="${productoo[i].link}" class="product-name">${productoo[i].nombre}</a>
+                <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
                     <p class="precio">$${productoo[i].precio}</p>
                     <img src="img/Flecha.png" alt="">
@@ -176,7 +181,7 @@ function ClicleameEsta() {
         cat.getElementsByTagName("ul")[0].setAttribute("class", "cat");
         click = false;
     }
-}
+}   
 function ClicleameElCarrito() {
     if (clickCarr == false) {
         document.getElementById("carrito-cont").style.display = "flex";
@@ -186,19 +191,19 @@ function ClicleameElCarrito() {
         document.getElementById("carrito-cont").style.display = "none";
         clickCarr = false;
     }
-}
-function borraCarr() {
+}   
+function borraCarr(){
     document.getElementById("carrito-cont").style.display = "none"
 }
-var carrElements = document.getElementById("carrito-elements")
-function agregarCarro(element) {
+var carrElements = document.getElementById("carrito-elements") 
+function agregarCarro(element){
     var papi = element.parentNode.parentNode;
     var imgCarr = papi.querySelector(".imag").src;
     var name = papi.querySelector(".product-name").innerText;
     var precio = papi.querySelector(".precio").innerText;
-    if (otroClick == false) {
+    if(otroClick == false){
         document.getElementById("nada").style.display = 'none';
-        carrElements.innerHTML += `<div class="cont-carrito-product">
+    carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
             <button onclick="cantidadMenos(this)">-</button>
@@ -213,10 +218,10 @@ function agregarCarro(element) {
     </div>
 </div>`
     }
-    else if (otroClick == true) {
+    else if(otroClick == true){
         document.getElementById("nada").style.display = 'block';
     }
-    else {
+    else{
         carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">

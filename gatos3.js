@@ -6,119 +6,117 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        img: 'productos/Saco-Nomade_Pellets_10kg_1_720x.webp',
-        marca: 'Nomade',
-        nombre: 'Alimento Gato Adulto 10kg',
-        precio: '23.990',
-        precioAnterior: '30.000',
-        link: 'producto1.html'
+        img: 'Gatos/31.png',
+        marca: 'Lavanda',
+        nombre: 'ARENA_AMERICA_LITTER_LAVANDA_15_KG',
+        precio: '6.270',
+        precioAnterior: '7.270'
     },
     {
-        img: 'productos/lw_alimento_extruido_hamster_1_1_1.jpg',
-        marca: 'Hunter',
-        nombre: 'Alimento extruido para hamster y gerbos',
-        precio: '14.990',
-        precioAnterior: '19.990',
-        link: 'producto2.html'
+        img: 'Gatos/32.png',
+        marca: 'catnip',
+        nombre: 'Bola_Hierba_Gatera_Catnip_Snack_Para_Gatos_Bola_Adhesiva_Cat',
+        precio: '13.270',
+        precioAnterior: '14.270'
     },
     {
-        img: 'productos/golden-fishless-filet-94288_2000x.webp',
-        marca: 'Protteina Foods',
-        nombre: 'GARDEIN GOLDEN FISHLESS FILETS',
+        img: 'Gatos/33.png',
+        marca: 'Premier',
+        nombre: 'PremieR_Gatos_Gatitos_Pollo_7,5_Kg',
+        precio: '5.270',
+        precioAnterior: '10.540'
+    },
+    {
+        img: 'Gatos/34.png',
+        marca: 'Premier2',
+        nombre: 'PremieR_Gatos_Adultos_Pollo_7,5_Kg-LIMPIA_PATITAS',
         precio: '7.990',
-        precioAnterior: '10.990',
-        link: 'producto3.html'
+        precioAnterior: '13.960'
     },
     {
-        img: 'img-productos/30.png',
-        marca: 'Cepillate',
-        nombre: 'Cepillo Desplazador',
-        precio: '2.990',
+        img: 'Gatos/35.png',
+        marca: 'hpm',
+        nombre: 'Virbac_hpm_felino_hypoallergy_3kg&G_BAÑO_IGLU_VERDE_CON_FILTRO_Y_PALA',
+        precio: '4.220',
+        precioAnterior: '5.990'
+    },
+    {
+        img: 'Gatos/36.png',
+        marca: 'neutered',
+        nombre: 'Virbac_HPM_Felino_Adult_Neutered_3kg-2 KG',
+        precio: '6.990',
+        precioAnterior: '8.000'
+    },
+    {
+        img: 'Gatos/37.png',
+        marca: 'amily',
+        nombre: 'Amity_Lata_Chicken,Salmon_Adult_Cat_80_gr',
+        precio: '2.270',
         precioAnterior: '3.990'
     },
     {
-        img: 'img-productos/31.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collar para perro de cuero con placa',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/32.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collares De Perro',
-        precio: '2.990',
-        precioAnterior: '8.990'
-    },
-    {
-        img: 'img-productos/7.jpg',
-        marca: 'Cannes',
-        nombre: 'Alimentos para perros Cannes adulto 9kg',
-        precio: '10.990',
-        precioAnterior: '20.990'
-    },
-    {
-        img: 'img-productos/8.png',
-        marca: 'img-productos/2.png',
-        nombre: 'Juguete para Perro Pelota Interactiva 7 Cm Kulcan',
-        precio: '5.990',
-        precioAnterior: '12.990'
-    },
-    {
-        img: 'img-productos/9.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Snack Treaties Minis Salmon',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/10.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Beed Stick Jr Mineral',
-        precio: '5.990',
-        precioAnterior: '10.000'
-    },
-    {
-        img: 'img-productos/11.png',
-        marca: 'Virbac',
-        nombre: 'VIRBAC MILPRO PERROS-5 KG',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/12.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Medium 12 kg',
-        precio: '2.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/13.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Large 12 kg',
-        precio: '4.990',
-        precioAnterior: '7.990'
-    },
-    {
-        img: 'img-productos/14.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Baby Large-Medium 12kg',
-        precio: '8.990',
+        img: 'Gatos/38.png',
+        marca: 'catit',
+        nombre: 'CATIT_CABRIO_COLOR_TURQUESA',
+        precio: '12.660',
         precioAnterior: '15.990'
     },
+    {
+        img: 'Gatos/39.png',
+        marca: 'Senior',
+        nombre: 'Virbac_HPM_Felino_Senior_Neutered_1.5kg',
+        precio: '3.690',
+        precioAnterior: '4.690'
+    },
+    {
+        img: 'Gatos/40.png',
+        marca: 'Fit',
+        nombre: 'Fit_Formula_Arena_para_gato_aglutinante_Carbón_Activado',
+        precio: '17.670',
+        precioAnterior: '19.260'
+    },
+    {
+        img: 'Gatos/41.png',
+        marca: 'odour',
+        nombre: 'ODOUR_BUSTER_ORIGINAL_ARENA_PARA_GATOS',
+        precio: '7.500',
+        precioAnterior: '10.690'
+    },
+    {
+        img: 'Gatos/42.png',
+        marca: 'churu',
+        nombre: 'Churu_Broth_Chicken_Salmon_Recipe_50gr',
+        precio: '4.990',
+        precioAnterior: '6.000'
+    },
+    {
+        img: 'Gatos/43.png',
+        marca: 'kitten',
+        nombre: 'Leonardo_lata_kitten_Quality_Selection_200grs',
+        precio: '2.220',
+        precioAnterior: '3.330'
+    },
+    {
+        img: 'Gatos/44.jpg',
+        marca: 'Arnes',
+        nombre: 'Arnés_para_Gato_Rojo',
+        precio: '8.270',
+        precioAnterior: '13.270'
+    }
+    
 ]
 console.log(productoo[0].marca);
 var a = document.querySelectorAll(".product");
 
 
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 14; i++) {
     a[i].innerHTML = `
-<a href="${productoo[i].link}" class="product-img">
+<div class="product-img">
                 <img class="imag" src="${productoo[i].img}" alt="">
-            </a>
+            </div>
             <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
-                <a href="${productoo[i].link}" class="product-name">${productoo[i].nombre}</a>
+                <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
                     <p class="precio">$${productoo[i].precio}</p>
                     <img src="img/Flecha.png" alt="">
@@ -176,7 +174,7 @@ function ClicleameEsta() {
         cat.getElementsByTagName("ul")[0].setAttribute("class", "cat");
         click = false;
     }
-}
+}   
 function ClicleameElCarrito() {
     if (clickCarr == false) {
         document.getElementById("carrito-cont").style.display = "flex";
@@ -186,19 +184,19 @@ function ClicleameElCarrito() {
         document.getElementById("carrito-cont").style.display = "none";
         clickCarr = false;
     }
-}
-function borraCarr() {
+}   
+function borraCarr(){
     document.getElementById("carrito-cont").style.display = "none"
 }
-var carrElements = document.getElementById("carrito-elements")
-function agregarCarro(element) {
+var carrElements = document.getElementById("carrito-elements") 
+function agregarCarro(element){
     var papi = element.parentNode.parentNode;
     var imgCarr = papi.querySelector(".imag").src;
     var name = papi.querySelector(".product-name").innerText;
     var precio = papi.querySelector(".precio").innerText;
-    if (otroClick == false) {
+    if(otroClick == false){
         document.getElementById("nada").style.display = 'none';
-        carrElements.innerHTML += `<div class="cont-carrito-product">
+    carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
             <button onclick="cantidadMenos(this)">-</button>
@@ -213,10 +211,10 @@ function agregarCarro(element) {
     </div>
 </div>`
     }
-    else if (otroClick == true) {
+    else if(otroClick == true){
         document.getElementById("nada").style.display = 'block';
     }
-    else {
+    else{
         carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">

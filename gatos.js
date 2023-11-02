@@ -6,119 +6,138 @@ var flecha = document.getElementById("flecha-op");
 document.getElementById("carrito-cont").style.display = "none"
 const productoo = [
     {
-        img: 'productos/Saco-Nomade_Pellets_10kg_1_720x.webp',
-        marca: 'Nomade',
-        nombre: 'Alimento Gato Adulto 10kg',
-        precio: '23.990',
-        precioAnterior: '30.000',
-        link: 'producto1.html'
-    },
-    {
-        img: 'productos/lw_alimento_extruido_hamster_1_1_1.jpg',
-        marca: 'Hunter',
-        nombre: 'Alimento extruido para hamster y gerbos',
-        precio: '14.990',
-        precioAnterior: '19.990',
-        link: 'producto2.html'
-    },
-    {
-        img: 'productos/golden-fishless-filet-94288_2000x.webp',
-        marca: 'Protteina Foods',
-        nombre: 'GARDEIN GOLDEN FISHLESS FILETS',
-        precio: '7.990',
-        precioAnterior: '10.990',
-        link: 'producto3.html'
-    },
-    {
-        img: 'img-productos/30.png',
-        marca: 'Cepillate',
-        nombre: 'Cepillo Desplazador',
-        precio: '2.990',
-        precioAnterior: '3.990'
-    },
-    {
-        img: 'img-productos/31.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collar para perro de cuero con placa',
-        precio: '3.990',
-        precioAnterior: '5.990'
-    },
-    {
-        img: 'img-productos/32.jpg',
-        marca: 'Collaraca',
-        nombre: 'Collares De Perro',
-        precio: '2.990',
-        precioAnterior: '8.990'
-    },
-    {
-        img: 'img-productos/7.jpg',
-        marca: 'Cannes',
-        nombre: 'Alimentos para perros Cannes adulto 9kg',
+        img: 'Gatos/1.jpeg',
+        marca: 'Kit kat',
+        nombre: 'Alimento-gato-adulto-carne-1-kg',
         precio: '10.990',
         precioAnterior: '20.990'
     },
     {
-        img: 'img-productos/8.png',
-        marca: 'img-productos/2.png',
-        nombre: 'Juguete para Perro Pelota Interactiva 7 Cm Kulcan',
-        precio: '5.990',
-        precioAnterior: '12.990'
+        img: 'Gatos/2.jpeg',
+        marca: 'Acme',
+        nombre: 'Alimento-gato-pescado-3-kg',
+        precio: '13.690',
+        precioAnterior: '18.250'
     },
     {
-        img: 'img-productos/9.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Snack Treaties Minis Salmon',
-        precio: '5.990',
-        precioAnterior: '10.000'
+        img: 'Gatos/3.jpeg',
+        marca: 'ambrosofi',
+        nombre: 'Alimento_gato_8_kg_salmón_Premium_Felinnes',
+        precio: '14.290',
+        precioAnterior: '16.900'
     },
     {
-        img: 'img-productos/10.png',
-        marca: 'Vitakraft',
-        nombre: 'Vitakraft Beed Stick Jr Mineral',
-        precio: '5.990',
-        precioAnterior: '10.000'
+        img: 'Gatos/4.png',
+        marca: 'Ziggs',
+        nombre: 'purina-pro-plan-gatos-sterilized8485',
+        precio: '16.900',
+        precioAnterior: '18.900'
     },
     {
-        img: 'img-productos/11.png',
-        marca: 'Virbac',
-        nombre: 'VIRBAC MILPRO PERROS-5 KG',
-        precio: '3.990',
-        precioAnterior: '5.990'
+        img: 'Gatos/5.jpeg',
+        marca: 'Zac',
+        nombre: 'Alimento_seco_para_gato_adulto_8_kg_salmón_y_sardina',
+        precio: '13.900',
+        precioAnterior: '15.000'
     },
     {
-        img: 'img-productos/12.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Medium 12 kg',
-        precio: '2.990',
-        precioAnterior: '5.990'
+        img: 'Gatos/6.jpg',
+        marca: 'Mordekaiser',
+        nombre: 'Collar_isabelino_Acolchado_Para_Razas_Medianas_Grandes',
+        precio: '11.900',
+        precioAnterior: '13.000'
     },
     {
-        img: 'img-productos/13.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Junior Special Large 12 kg',
-        precio: '4.990',
-        precioAnterior: '7.990'
+        img: 'Gatos/7.png',
+        marca: 'Darius',
+        nombre: 'Amity_Lata_Chicken_and_Peas_Adult_Cat_80gr',
+        precio: '12.690',
+        precioAnterior: '13.000'
     },
     {
-        img: 'img-productos/14.png',
-        marca: 'Virbac',
-        nombre: 'Virbac HPM Canino Baby Large-Medium 12kg',
-        precio: '8.990',
-        precioAnterior: '15.990'
+        img: 'Gatos/8.jpg',
+        marca: 'seraphine',
+        nombre: 'Cepillo_Masajeador_Para_Gatos',
+        precio: '10.000',
+        precioAnterior: '10.990'
     },
+    {
+        img: 'Gatos/9.png',
+        marca: 'zed',
+        nombre: 'Catit_Vesper_Base_Alta_Negro',
+        precio: '23.990',
+        precioAnterior: '28.000'
+    },
+    {
+        img: 'Gatos/10.png',
+        marca: 'ornn',
+        nombre: 'Vitakraft_Poesie_Delice_Carne',
+        precio: '7.990',
+        precioAnterior: '8.000'
+    },
+    {
+        img: 'Gatos/11.png',
+        marca: 'fiora',
+        nombre: 'Churu_Broth_Chicken_Recipe_50gr',
+        precio: '6.000',
+        precioAnterior: '6.990'
+    },
+    {
+        img: 'Gatos/12.png',
+        marca: 'rammus',
+        nombre: 'CAJA_SANITARIA_TRANSPARENTE',
+        precio: '15.990',
+        precioAnterior: '17.990'
+    },
+    {
+        img: 'Gatos/13.png',
+        marca: 'chogath',
+        nombre: 'Churu_Broth_Chicken_Scallop_Recipe_50gr',
+        precio: '5.000',
+        precioAnterior: '5.550'
+    },
+    {
+        img: 'Gatos/14.png',
+        marca: 'nunu',
+        nombre: 'Catit_Vesper_Minou',
+        precio: '19.990',
+        precioAnterior: '21.690'
+    },
+    {
+        img: 'Gatos/15.png',
+        marca: 'zeri',
+        nombre: 'Catit_Play_Spinning_Bee',
+        precio: '12.270',
+        precioAnterior: '14.000'
+    },
+    {
+        img: 'Gatos/16.png',
+        marca: 'betty',
+        nombre: 'Caja_Catit_Vesper_Grande_Nogal',
+        precio: '16.270',
+        precioAnterior: '17.260'
+    },
+    {
+        img: 'Gatos/17.png',
+        marca: 'sussy',
+        nombre: 'ARENA_SANITARIA_MULTICAT',
+        precio: '17.270',
+        precioAnterior: '18.260'
+    }
+    
 ]
 console.log(productoo[0].marca);
 var a = document.querySelectorAll(".product");
 
 
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 15; i++) {
     a[i].innerHTML = `
-<a href="${productoo[i].link}" class="product-img">
+<div class="product-img">
                 <img class="imag" src="${productoo[i].img}" alt="">
-            </a>
+            </div>
             <p class="marca">${productoo[i].marca}</p>
             <div class="product-info">
-                <a href="${productoo[i].link}" class="product-name">${productoo[i].nombre}</a>
+                <p class="product-name">${productoo[i].nombre}</p>
                 <div class="cont-precio">
                     <p class="precio">$${productoo[i].precio}</p>
                     <img src="img/Flecha.png" alt="">
@@ -176,7 +195,7 @@ function ClicleameEsta() {
         cat.getElementsByTagName("ul")[0].setAttribute("class", "cat");
         click = false;
     }
-}
+}   
 function ClicleameElCarrito() {
     if (clickCarr == false) {
         document.getElementById("carrito-cont").style.display = "flex";
@@ -186,19 +205,19 @@ function ClicleameElCarrito() {
         document.getElementById("carrito-cont").style.display = "none";
         clickCarr = false;
     }
-}
-function borraCarr() {
+}   
+function borraCarr(){
     document.getElementById("carrito-cont").style.display = "none"
 }
-var carrElements = document.getElementById("carrito-elements")
-function agregarCarro(element) {
+var carrElements = document.getElementById("carrito-elements") 
+function agregarCarro(element){
     var papi = element.parentNode.parentNode;
     var imgCarr = papi.querySelector(".imag").src;
     var name = papi.querySelector(".product-name").innerText;
     var precio = papi.querySelector(".precio").innerText;
-    if (otroClick == false) {
+    if(otroClick == false){
         document.getElementById("nada").style.display = 'none';
-        carrElements.innerHTML += `<div class="cont-carrito-product">
+    carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
             <button onclick="cantidadMenos(this)">-</button>
@@ -213,10 +232,10 @@ function agregarCarro(element) {
     </div>
 </div>`
     }
-    else if (otroClick == true) {
+    else if(otroClick == true){
         document.getElementById("nada").style.display = 'block';
     }
-    else {
+    else{
         carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
