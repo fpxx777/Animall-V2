@@ -210,6 +210,7 @@ Categorias ↑
     width: 30%;
     background-color: #E9E5D6;
     font-family: 'Kulim_Park';
+    text-decoration: none;
 }
 
 .product-img img {
@@ -232,10 +233,15 @@ Categorias ↑
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    float: left;
     height: 30;
     min-height: 150px;
     max-height: 350px;
     margin-left: 0.5vw;
+}
+.product-name{
+    width: 100%;
+    float: left;
 }
 
 .cont-precio {
@@ -378,12 +384,17 @@ Ofertas especiales??
     font-weight: normal;
     margin-top: 1vw;
 }
+.sub-superior ul a{
+    color: #D7D3C7;
+    text-decoration: none;
+}
 
 .contenido {
     list-style: none;
     font-size: 1vw;
     font-weight: lighter;
     margin: 0.2vw 0;
+    font-family: 'Kulim_Park';
 }
 .primer-contenido{
     list-style: none;
@@ -442,6 +453,7 @@ parte de abajo
     border-radius: 100%;
     font-size: 1vw;
     margin: 1vw;
+    color: #86837b;
     text-decoration: none;
 }
 .seleccion-exepcion{

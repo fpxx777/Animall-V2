@@ -173,7 +173,7 @@ function ClicleameEsta() {
         cat.getElementsByTagName("ul")[0].setAttribute("class", "cat");
         click = false;
     }
-}   
+}
 function ClicleameElCarrito() {
     if (clickCarr == false) {
         document.getElementById("carrito-cont").style.display = "flex";
@@ -183,19 +183,19 @@ function ClicleameElCarrito() {
         document.getElementById("carrito-cont").style.display = "none";
         clickCarr = false;
     }
-}   
-function borraCarr(){
+}
+function borraCarr() {
     document.getElementById("carrito-cont").style.display = "none"
 }
-var carrElements = document.getElementById("carrito-elements") 
-function agregarCarro(element){
+var carrElements = document.getElementById("carrito-elements")
+function agregarCarro(element) {
     var papi = element.parentNode.parentNode;
     var imgCarr = papi.querySelector(".imag").src;
     var name = papi.querySelector(".product-name").innerText;
     var precio = papi.querySelector(".precio").innerText;
-    if(otroClick == false){
+    if (otroClick == false) {
         document.getElementById("nada").style.display = 'none';
-    carrElements.innerHTML += `<div class="cont-carrito-product">
+        carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
             <button onclick="cantidadMenos(this)">-</button>
@@ -210,10 +210,10 @@ function agregarCarro(element){
     </div>
 </div>`
     }
-    else if(otroClick == true){
+    else if (otroClick == true) {
         document.getElementById("nada").style.display = 'block';
     }
-    else{
+    else {
         carrElements.innerHTML += `<div class="cont-carrito-product">
     <div class="carrito-product">
         <div class="cantidad-cont">
